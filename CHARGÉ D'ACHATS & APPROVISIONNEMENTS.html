@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Offre d'emploi — Chargé d'Achats & Approvisionnements | ALL IN ONE</title>
+  <meta name="description" content="Nous recrutons : Chargé d'Achats & Approvisionnements. Envoyez votre CV à recrutement@allinonerdc.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#bb0f0f;
+      --brand-dark:#8a0a0a;
+      --black:#111111;
+      --white:#ffffff;
+      --muted:#6b7280;
+      --light-gray:#f8f9fa;
+      --maxw:1100px;
+      --radius:16px;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background:var(--light-gray);
+      color:var(--black);
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+
+    /* HERO BANNER */
+    .hero-banner{
+      background: url('banniere.jpg') center center / cover no-repeat;
+      min-height:320px;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+    .hero-banner::before{
+      content:'';
+      position:absolute;
+      top:0;left:0;right:0;bottom:0;
+      background:rgba(0,0,0,0.1);
+    }
+    .hero-banner::after{
+      content:'';
+      position:absolute;
+      bottom:-50px;
+      left:0;right:0;
+      height:100px;
+      background:var(--light-gray);
+      transform:skewY(-2deg);
+    }
+    .hero-content{
+      position:absolute;
+      bottom:30px;
+      left:0;
+      right:0;
+      z-index:5;
+      text-align:center;
+      padding:0 20px;
+    }
+    .logo-hero{
+      width:200px;
+      margin-bottom:20px;
+      filter:drop-shadow(0 4px 20px rgba(0,0,0,0.3));
+      animation: fadeInUp 0.8s ease-out;
+    }
+    .hero-tagline{
+      font-size:1.4rem;
+      font-weight:700;
+      letter-spacing:6px;
+      text-transform:uppercase;
+      animation: fadeInUp 0.8s ease-out 0.2s both;
+      color: var(--white);
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    /* MAIN CONTAINER */
+    .main-container{
+      max-width:var(--maxw);
+      margin:-30px auto 60px;
+      padding:0 20px;
+      position:relative;
+      z-index:10;
+    }
+
+    /* JOB HEADER CARD */
+    .job-header{
+      background:var(--white);
+      border-radius:var(--radius);
+      padding:40px;
+      box-shadow:0 20px 60px rgba(0,0,0,0.1);
+      margin-bottom:30px;
+      display:flex;
+      align-items:center;
+      gap:30px;
+      flex-wrap:wrap;
+      position:relative;
+      overflow:hidden;
+    }
+    .job-header::before{
+      content:'';
+      position:absolute;
+      top:0;left:0;
+      width:6px;height:100%;
+      background:linear-gradient(180deg, var(--brand), var(--brand-dark));
+    }
+    .logo-black{
+      width:120px;
+      flex-shrink:0;
+    }
+    .job-title-block{flex:1;min-width:280px;}
+    .job-badge{
+      display:inline-block;
+      background:var(--brand);
+      color:var(--white);
+      padding:8px 20px;
+      border-radius:30px;
+      font-size:0.85rem;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      margin-bottom:12px;
+    }
+    .job-title{
+      font-family:'Bebas Neue', sans-serif;
+      font-size:3rem;
+      color:var(--black);
+      line-height:1;
+      margin-bottom:10px;
+    }
+    .job-meta{
+      display:flex;
+      gap:25px;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+    .job-meta span{
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .job-meta svg{width:18px;height:18px;fill:var(--brand);}
+
+    /* CONTENT GRID */
+    .content-grid{
+      display:grid;
+      grid-template-columns:1fr 380px;
+      gap:30px;
+    }
+    @media(max-width:900px){
+      .content-grid{grid-template-columns:1fr;}
+    }
+
+    /* MAIN CONTENT CARD */
+    .content-card{
+      background:var(--white);
+      border-radius:var(--radius);
+      padding:40px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.06);
+    }
+    .section-title{
+      font-family:'Bebas Neue', sans-serif;
+      font-size:1.8rem;
+      color:var(--black);
+      margin-bottom:20px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .section-title::before{
+      content:'';
+      width:4px;height:30px;
+      background:var(--brand);
+      border-radius:2px;
+    }
+    .mission-list{
+      list-style:none;
+      margin-bottom:35px;
+    }
+    .mission-list li{
+      padding:14px 0 14px 35px;
+      position:relative;
+      border-bottom:1px solid #f0f0f0;
+      font-size:0.98rem;
+    }
+    .mission-list li:last-child{border-bottom:none;}
+    .mission-list li::before{
+      content:'✓';
+      position:absolute;
+      left:0;top:14px;
+      width:24px;height:24px;
+      background:linear-gradient(135deg, var(--brand), var(--brand-dark));
+      color:var(--white);
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:0.75rem;
+      font-weight:bold;
+    }
+
+    /* SIDEBAR */
+    .sidebar{display:flex;flex-direction:column;gap:25px;}
+    .sidebar-card{
+      background:var(--white);
+      border-radius:var(--radius);
+      padding:30px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.06);
+    }
+    .sidebar-card.highlight{
+      background:linear-gradient(135deg, var(--brand), var(--brand-dark));
+      color:var(--white);
+    }
+    .sidebar-card.highlight .sidebar-title{color:var(--white);}
+    .sidebar-card.highlight a{color:var(--white);}
+    .sidebar-title{
+      font-family:'Bebas Neue', sans-serif;
+      font-size:1.4rem;
+      color:var(--black);
+      margin-bottom:15px;
+    }
+    .contact-item{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:12px 0;
+      font-size:0.95rem;
+    }
+    .contact-item svg{
+      width:22px;height:22px;
+      fill:currentColor;
+      opacity:0.9;
+    }
+    .contact-item a{
+      color:inherit;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .contact-item a:hover{text-decoration:underline;}
+
+    /* CTA BUTTONS */
+    .cta-section{margin-top:20px;}
+    .btn{
+      display:block;
+      width:100%;
+      padding:16px 24px;
+      border-radius:12px;
+      text-align:center;
+      text-decoration:none;
+      font-weight:700;
+      font-size:1rem;
+      transition:all 0.3s ease;
+      margin-bottom:12px;
+    }
+    .btn-primary{
+      background:var(--white);
+      color:var(--brand);
+      box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    }
+    .btn-primary:hover{
+      transform:translateY(-2px);
+      box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    }
+    .btn-secondary{
+      background:rgba(255,255,255,0.15);
+      color:var(--white);
+      border:2px solid rgba(255,255,255,0.4);
+    }
+    .btn-secondary:hover{
+      background:rgba(255,255,255,0.25);
+    }
+
+    /* PROFILE TAGS */
+    .profile-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .tag{
+      background:var(--light-gray);
+      color:var(--black);
+      padding:10px 16px;
+      border-radius:8px;
+      font-size:0.88rem;
+      font-weight:500;
+      border-left:3px solid var(--brand);
+    }
+
+    /* FOOTER */
+    .footer{
+      background:var(--black);
+      color:var(--white);
+      text-align:center;
+      padding:40px 20px;
+      margin-top:60px;
+    }
+    .footer-logo{width:100px;margin-bottom:15px;filter:brightness(0) invert(1);}
+    .footer p{opacity:0.7;font-size:0.9rem;}
+
+    /* ANIMATIONS */
+    @keyframes fadeInUp{
+      from{opacity:0;transform:translateY(30px);}
+      to{opacity:1;transform:translateY(0);}
+    }
+    .animate{animation:fadeInUp 0.6s ease-out both;}
+    .delay-1{animation-delay:0.1s;}
+    .delay-2{animation-delay:0.2s;}
+    .delay-3{animation-delay:0.3s;}
+
+    /* DECORATIVE ELEMENTS */
+    .floating-shapes{
+      position:absolute;
+      top:0;left:0;right:0;bottom:0;
+      pointer-events:none;
+      overflow:hidden;
+    }
+    .shape{
+      position:absolute;
+      background:rgba(255,255,255,0.05);
+      border-radius:50%;
+    }
+    .shape-1{width:300px;height:300px;top:-100px;right:-50px;}
+    .shape-2{width:200px;height:200px;bottom:0;left:10%;}
+    .shape-3{width:150px;height:150px;top:30%;left:-30px;}
+  </style>
+</head>
+<body>
+
+  <!-- HERO BANNER -->
+  <header class="hero-banner">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <!-- Bannière avec logo intégré -->
+      <p class="hero-tagline">Conseil • Expertise • Croissance</p>
+    </div>
+  </header>
+
+  <main class="main-container">
+    
+    <!-- JOB HEADER -->
+    <div class="job-header animate">
+      <!-- Logo noir -->
+      <img class="logo-black" src="logo all in one noire.png" alt="ALL IN ONE">
+      <div class="job-title-block">
+        <span class="job-badge">🔥 Nous recrutons</span>
+        <h1 class="job-title">CHARGÉ D'ACHATS & APPROVISIONNEMENTS</h1>
+        <div class="job-meta">
+          <span>
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Affectation : Kinshasa-Gombe
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            Deadline : Mercredi 17 Juin 2026
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT GRID -->
+    <div class="content-grid">
+      
+      <!-- MAIN CONTENT -->
+      <div class="content-card animate delay-1">
+        <h2 class="section-title">Missions principales</h2>
+        <ul class="mission-list">
+          <li>Identifier et sélectionner les fournisseurs (locaux et internationaux).</li>
+          <li>Négocier les prix, les délais de livraison et les conditions de paiement.</li>
+          <li>Gérer le processus de commande, de la demande de cotation à la réception.</li>
+          <li>Assurer le suivi des stocks pour éviter toute rupture ou surstockage.</li>
+          <li>Contrôler la conformité des livraisons par rapport aux bons de commande.</li>
+        </ul>
+
+        <h2 class="section-title">Profil recherché</h2>
+        <div class="profile-tags">
+          <span class="tag">Bac+3/5 en Gestion, Logistique, ou Commerce</span>
+          <span class="tag">Expérience confirmée dans la chaîne d'approvisionnement (Supply Chain)</span>
+          <span class="tag">Excellentes capacités de négociation et sens de l'éthique</span>
+          <span class="tag">Maîtrise de l'outil informatique (Excel avancé) et idéalement d'un ERP</span>
+          <span class="tag">Disponibilité immédiate</span>
+        </div>
+
+        <h2 class="section-title" style="margin-top:35px;">Nous offrons</h2>
+        <div class="profile-tags">
+          <span class="tag">🌟 Environnement de travail sain</span>
+          <span class="tag">💰 Salaire compétitif</span>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        
+        <div class="sidebar-card highlight animate delay-2">
+          <h3 class="sidebar-title">📩 Postuler maintenant</h3>
+          <p style="margin-bottom:20px;opacity:0.95;">Envoyez votre CV et lettre de motivation avec l'objet <strong>« Chargé d'Achats & Approvisionnements »</strong></p>
+          <div class="cta-section">
+            <a class="btn btn-primary" href="mailto:recrutement@allinonerdc.com?subject=Chargé%20d'Achats%20%26%20Approvisionnements" style="color:#bb0f0f !important;">
+              ✉️ Cliquez ici pour envoyer le CV
+            </a>
+            <a class="btn btn-secondary" href="#" onclick="window.print();return false;">
+              🖨️ Imprimer l'offre
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar-card animate delay-3">
+          <h3 class="sidebar-title">📞 Contact</h3>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <a href="tel:+243841704675">+243 841 704 675</a>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:recrutement@allinonerdc.com">recrutement@allinonerdc.com</a>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span style="font-weight:600;">Kinshasa-Gombe, 3098 avenue Batetela, boulevard du 30 juin, Immeuble Crown Tower, 9e niveau local 904</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            <a href="https://www.allinone-rdc.com" target="_blank">www.allinone-rdc.com</a>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img class="footer-logo" src="logo all in one noire.png" alt="ALL IN ONE">
+    <p>© 2026 ALL IN ONE RDC — Tous droits réservés</p>
+    <p style="margin-top:8px;font-size:0.8rem;">Conseil • Expertise • Croissance</p>
+  </footer>
+
+</body>
+</html>
