@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Offre d'emploi — Assistant(e) aux Ressources Humaines | ALL IN ONE</title>
-  <meta name="description" content="Nous recrutons : Assistant(e) aux Ressources Humaines. Envoyez votre CV à recrutement@allinonerdc.com" />
+  <title>Offre d'emploi — Assistant RH | ALL IN ONE</title>
+  <meta name="description" content="Nous recrutons : Assistant RH (H). Envoyez votre CV à recrutement@allinonerdc.com" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -125,10 +125,16 @@
     }
     .job-title{
       font-family:'Bebas Neue', sans-serif;
-      font-size:3rem;
+      font-size:2.6rem;
       color:var(--black);
-      line-height:1;
-      margin-bottom:10px;
+      line-height:1.05;
+      margin-bottom:6px;
+    }
+    .job-subtitle{
+      font-size:1rem;
+      color:var(--muted);
+      font-weight:500;
+      margin-bottom:12px;
     }
     .job-meta{
       display:flex;
@@ -152,6 +158,7 @@
     }
     @media(max-width:900px){
       .content-grid{grid-template-columns:1fr;}
+      .job-title{font-size:2.1rem;}
     }
 
     /* MAIN CONTENT CARD */
@@ -176,9 +183,16 @@
       background:var(--brand);
       border-radius:2px;
     }
+    .subsection-title{
+      font-size:1.05rem;
+      font-weight:700;
+      color:var(--brand);
+      margin:25px 0 10px;
+    }
+    .subsection-title:first-of-type{margin-top:0;}
     .mission-list{
       list-style:none;
-      margin-bottom:35px;
+      margin-bottom:10px;
     }
     .mission-list li{
       padding:14px 0 14px 35px;
@@ -224,7 +238,7 @@
     }
     .contact-item{
       display:flex;
-      align-items:center;
+      align-items:flex-start;
       gap:12px;
       padding:12px 0;
       font-size:0.95rem;
@@ -233,6 +247,8 @@
       width:22px;height:22px;
       fill:currentColor;
       opacity:0.9;
+      flex-shrink:0;
+      margin-top:2px;
     }
     .contact-item a{
       color:inherit;
@@ -276,7 +292,7 @@
     /* PROFILE TAGS */
     .profile-tags{
       display:flex;
-      flex-wrap:wrap;
+      flex-direction:column;
       gap:10px;
     }
     .tag{
@@ -337,7 +353,6 @@
       <div class="shape shape-3"></div>
     </div>
     <div class="hero-content">
-      <!-- Bannière avec logo intégré -->
       <p class="hero-tagline">Conseil • Expertise • Croissance</p>
     </div>
   </header>
@@ -346,19 +361,19 @@
     
     <!-- JOB HEADER -->
     <div class="job-header animate">
-      <!-- Logo noir -->
       <img class="logo-black" src="logo all in one noire.png" alt="ALL IN ONE">
       <div class="job-title-block">
         <span class="job-badge">🔥 Nous recrutons</span>
-        <h1 class="job-title">ASSISTANT(E) RESSOURCES HUMAINES</h1>
+        <h1 class="job-title">ASSISTANT RH</h1>
+        <p class="job-subtitle">Assistant Ressources Humaines (H)</p>
         <div class="job-meta">
           <span>
             <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            Affectation : RDC
+            Affectation : Kolwezi
           </span>
           <span>
             <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-            Deadline : Lundi 19 Janvier 2026 à 13h30
+            Deadline : Vendredi 21 Août 2026
           </span>
         </div>
       </div>
@@ -369,46 +384,44 @@
       
       <!-- MAIN CONTENT -->
       <div class="content-card animate delay-1">
-        <h2 class="section-title">Missions principales</h2>
+        <h2 class="section-title">À propos du poste</h2>
+        <p style="margin-bottom:30px;color:var(--muted);">Nous recrutons un Assistant Ressources Humaines. Rattaché au Responsable RH, vous serez au cœur de la gestion administrative du personnel et participerez activement au suivi quotidien des opérations RH de l'entreprise.</p>
+
+        <h2 class="section-title">Responsabilités et Missions</h2>
+
+        <p class="subsection-title">Administration du personnel</p>
         <ul class="mission-list">
-          <li><strong>Gestion Administrative du Personnel :</strong> Assurer la gestion des dossiers employés (contrats, avenants, absences, congés), mise à jour des bases de données RH et préparation des documents administratifs</li>
-          <li><strong>Support au Recrutement :</strong> Participer activement au processus de recrutement, de la diffusion des annonces jusqu'à l'organisation des entretiens et le suivi des candidatures</li>
-          <li><strong>Intégration des Nouveaux Collaborateurs :</strong> Contribuer à l'intégration réussie des nouvelles recrues en préparant leur arrivée et en assurant le suivi des parcours d'intégration</li>
-          <li><strong>Formation et Développement :</strong> Apporter un soutien à l'organisation des sessions de formation et au suivi des plans de développement des compétences</li>
-          <li><strong>Communication Interne :</strong> Aider à la diffusion des informations RH internes et répondre aux questions des collaborateurs concernant les politiques et procédures RH</li>
-          <li><strong>Reporting RH :</strong> Contribuer à la collecte des données RH et à l'élaboration de tableaux de bord et de rapports</li>
-          <li><strong>Projets RH :</strong> Participer ponctuellement à divers projets RH transverses (amélioration des processus, bien-être au travail, etc.)</li>
+          <li>Assurer la tenue, la mise à jour et l'archivage rigoureux des dossiers individuels des collaborateurs</li>
+          <li>Participer à la rédaction des contrats de travail, avenants et attestations diverses</li>
+          <li>Assurer le suivi des absences, des congés payés, des arrêts maladie et des éléments variables de la paie</li>
+        </ul>
+
+        <p class="subsection-title">Appui au recrutement &amp; Onboarding</p>
+        <ul class="mission-list">
+          <li>Rédiger et publier les offres d'emploi sur les différents canaux de diffusion</li>
+          <li>Réceptionner, trier et présélectionner les CV selon les profils recherchés</li>
+          <li>Planifier les entretiens d'embauche et participer à l'organisation de l'accueil et de l'intégration des nouveaux embauchés</li>
+        </ul>
+
+        <p class="subsection-title">Support à la formation &amp; Projets RH</p>
+        <ul class="mission-list" style="margin-bottom:35px;">
+          <li>Participer à la logistique des sessions de formation (inscriptions, convocation des participants, recueil des évaluations)</li>
+          <li>Contribuer à la bonne communication interne de l'entreprise</li>
+          <li>Participer à la préparation des tableaux de bord RH et à l'analyse du climat social</li>
         </ul>
 
         <h2 class="section-title">Profil recherché</h2>
         <div class="profile-tags">
-          <span class="tag">RH / Droit / Gestion / Administration</span>
-          <span class="tag">3 ans d'expérience minimum</span>
-          <span class="tag">Pack Office (Word, Excel, PowerPoint)</span>
-          <span class="tag">SIRH (atout)</span>
-          <span class="tag">Droit du travail</span>
-          <span class="tag">Administration du personnel</span>
+          <span class="tag"><strong>Formation :</strong> Graduat ou Licence (Bac+3) en Gestion des Ressources Humaines, Droit du Travail, Administration des Affaires ou Psychologie du Travail</span>
+          <span class="tag"><strong>Expérience :</strong> Justifier d'une expérience avérée de 1 à 3 ans sur un poste similaire en entreprise ou en cabinet de recrutement</span>
+          <span class="tag"><strong>Compétences techniques :</strong> Bonne connaissance des bases du Code du Travail congolais — Maîtrise solide du Pack Office (Excel pour la tenue des tableaux de bord, Word pour la rédaction)</span>
+          <span class="tag"><strong>Aptitudes :</strong> Rigueur organisationnelle, précision et grand sens du détail — Discrétion absolue et respect de la confidentialité des données RH — Excellentes qualités relationnelles, sens de l'écoute et esprit d'équipe</span>
         </div>
 
-        <h2 class="section-title" style="margin-top:35px;">Qualités personnelles</h2>
+        <h2 class="section-title" style="margin-top:35px;">Ce que nous offrons</h2>
         <div class="profile-tags">
-          <span class="tag">Sens de l'organisation</span>
-          <span class="tag">Rigueur</span>
-          <span class="tag">Discrétion & Confidentialité</span>
-          <span class="tag">Excellent relationnel</span>
-          <span class="tag">Sens du service</span>
-          <span class="tag">Proactivité & Autonomie</span>
-          <span class="tag">Gestion des priorités</span>
-          <span class="tag">Communication écrite et orale</span>
-        </div>
-
-        <h2 class="section-title" style="margin-top:35px;">Nous offrons</h2>
-        <div class="profile-tags">
-          <span class="tag">🌟 Environnement stimulant et collaboratif</span>
-          <span class="tag">📋 Missions variées et responsabilisantes</span>
-          <span class="tag">📚 Opportunités de formation</span>
-          <span class="tag">💰 Rémunération compétitive</span>
-          <span class="tag">🎁 Avantages sociaux attractifs</span>
+          <span class="tag">🌟 Un cadre stimulant, structuré et bienveillant, idéal pour monter en compétences sur l'ensemble des piliers RH</span>
+          <span class="tag">💰 Un salaire compétitif et motivant, aligné sur votre profil</span>
         </div>
       </div>
 
@@ -417,9 +430,9 @@
         
         <div class="sidebar-card highlight animate delay-2">
           <h3 class="sidebar-title">📩 Postuler maintenant</h3>
-          <p style="margin-bottom:20px;opacity:0.95;">Envoyez votre CV et lettre de motivation avec l'objet <strong>« Assistant(e) RH »</strong></p>
+          <p style="margin-bottom:20px;opacity:0.95;">Envoyez votre CV et lettre de motivation avec l'objet <strong>« Assistant RH »</strong></p>
           <div class="cta-section">
-            <a class="btn btn-primary" href="mailto:recrutement@allinonerdc.com?subject=Assistant(e)%20RH" style="color:#bb0f0f !important;">
+            <a class="btn btn-primary" href="mailto:recrutement@allinonerdc.com?subject=Assistant RH" style="color:#bb0f0f !important;">
               ✉️ Cliquez ici pour envoyer le CV
             </a>
             <a class="btn btn-secondary" href="#" onclick="window.print();return false;">
@@ -432,19 +445,19 @@
           <h3 class="sidebar-title">📞 Contact</h3>
           <div class="contact-item">
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-            <a href="tel:+243986617014">+243 986 617 014</a>
+            <a href="tel:+243841704675">+243 841 704 675</a>
           </div>
           <div class="contact-item">
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            <a href="mailto:recrutement@allinonerdc.com">recrutement@allinonerdc.com</a>
+            <a href="mailto:recrutement@allinonerdc.com">Recrutement@allinonerdc.com</a>
           </div>
           <div class="contact-item">
             <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            <span style="font-weight:600;">Lubumbashi, 01 Avenue Méthodiste, Q/Golf Kabulameshi, C/Annexe</span>
+            <span style="font-weight:600;">Avenue Laurent Désiré Kabila, quartier Mutoshi, commune Manika. Immeuble Silver, 3304, 4è étage, local 404 — Kolwezi</span>
           </div>
           <div class="contact-item">
             <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-            <a href="https://www.allinone-rdc.com" target="_blank">www.allinone-rdc.com</a>
+            <a href="https://allinone-rdc.com" target="_blank">allinone-rdc.com</a>
           </div>
         </div>
 
@@ -461,4 +474,3 @@
 
 </body>
 </html>
-
